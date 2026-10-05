@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://www.desktopaccountingapi.com/docs/
+    about: Guides, the API reference and the error catalog.
+  - name: Account, billing or connection help
+    url: https://www.desktopaccountingapi.com/contact
+    about: Questions about your project, keys, billing or a specific end user's connection.
