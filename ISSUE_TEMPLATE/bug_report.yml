@@ -1,0 +1,48 @@
+name: Bug report
+description: An SDK or example behaves differently from the documentation.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Never paste secret keys (`sk_live_...`, `sk_test_...`), webhook signing secrets, Web Connector passwords or customer data. Report security issues privately (see SECURITY.md), not here.
+  - type: input
+    id: version
+    attributes:
+      label: SDK version
+      description: From your package manager, or `.daapi-sdk.json` in the repository.
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime and operating system
+      placeholder: Node.js 22.11 on Ubuntu 24.04 / Python 3.12 on Windows 11 / .NET 8 / Java 21
+    validations:
+      required: true
+  - type: input
+    id: operation
+    attributes:
+      label: Operation
+      description: The operation you called.
+      placeholder: qbd.invoices.create
+  - type: input
+    id: request-id
+    attributes:
+      label: Request ID
+      description: The `Daapi-Request-Id` of the failing call (`req_...`). Every SDK error exposes it as its request ID.
+      placeholder: req_01j9x4m6v4c8k2t7q0r5s3w1zd
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Include the error type, code and message, and a minimal code sample.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true

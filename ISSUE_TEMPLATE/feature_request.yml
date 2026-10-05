@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest an SDK improvement or a QuickBooks Desktop capability you need.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the integration task, the QuickBooks Desktop objects involved and the languages you use.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+      description: An API shape, an SDK helper, an example or documentation.
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+      description: For example, the passthrough qbXML request you send today.
