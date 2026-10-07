@@ -6,7 +6,7 @@ A REST API and typed SDKs for QuickBooks Desktop and QuickBooks Enterprise. Your
 
 ## Packages
 
-All five packages are generated from the same API contract and released together with the same version (currently **0.1.1**).
+All five packages are generated from the same API contract and released together with the same version (currently **0.2.0**).
 
 | Language | Repository | Install |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ Runnable integrations for all four languages are in [examples](https://github.co
 ## What the SDKs share
 
 - A resource tree that mirrors the API: `client.qbd.invoices.list()`, `client.endUsers.create()`, `client.requests.retrieve()`.
-- Auto-pagination with one page of read-ahead. When a QuickBooks cursor expires, the SDK raises a typed error with your progress and never restarts the query silently.
+- Auto-pagination that requests the next page only when your loop needs it and reads ahead for slow loops. When a QuickBooks cursor expires, the SDK raises a typed error with your progress and never restarts the query silently.
 - Typed errors keyed on the API's error `type` and `code`, with `userFacingMessage`, `fixes`, `docsUrl` and `requestId` on every error.
 - Retries only where they are safe. Every write carries an idempotency key that is reused across its retries, and a write whose outcome is unknown is never retried.
 - Exact money: decimal types in every language instead of floating point.
