@@ -11,7 +11,7 @@ body:
     attributes:
       label: SDK version
       description: From your package manager, or `.daapi-sdk.json` in the repository.
-      placeholder: "0.5.2"
+      placeholder: "0.5.3"
     validations:
       required: true
   - type: input
