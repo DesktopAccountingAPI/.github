@@ -6,7 +6,7 @@ A REST API and typed SDKs for QuickBooks Desktop and QuickBooks Enterprise. Your
 
 ## Packages
 
-All five packages are generated from the same API contract and released together with the same version (currently **0.8.0**).
+All five packages are generated from the same API contract and released together with the same version (currently **0.9.0**).
 
 | Language | Repository | Install |
 | --- | --- | --- |
